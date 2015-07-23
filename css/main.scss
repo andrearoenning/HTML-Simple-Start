@@ -44,7 +44,7 @@ $h5-size: $h4-size;
 @mixin bg_color($color-name, $color) {
     .#{$color-name }{ background: $color;
         @if (lightness($color) < 60)
-            { color: $color-light-link;} else {
+            { color: $color-light-link;} @else {
                 color: $color-base-text;}
         }
 }
@@ -56,7 +56,7 @@ $h5-size: $h4-size;
         border-width: 1px 1px 3px 1px;
 
         @if (lightness($color) > 60)
-            { color: $color-base-text;} else {
+            { color: $color-base-text;} @else {
                 color: $color-light-link;}
         }
 }
